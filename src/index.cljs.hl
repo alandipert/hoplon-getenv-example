@@ -1,0 +1,7 @@
+(page "index.html"
+  (:require-macros [macros :refer [getenv]]))
+
+(html
+  (head)
+  (body
+    (h1 (str "ENV = " (getenv "ENV")))))
